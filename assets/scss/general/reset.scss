@@ -1,0 +1,17 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: var(--font-size-base-mobile);
+
+	@include min-mq($min-tablet) {
+		font-size: var(--font-size-base-desktop);
+	}
+}
+
+body {
+	font-size: 1rem;
+}

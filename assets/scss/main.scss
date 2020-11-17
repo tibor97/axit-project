@@ -1,3 +1,6 @@
-body {
-	background: red;
-}
+//general styles
+@import 'general/fonts';
+@import 'general/base-styles';
+
+//utilities
+@import 'utilities/variables';

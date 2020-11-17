@@ -1,0 +1,28 @@
+h1 {
+	font-family: var(--font-family-primary);
+	font-size: var(--size-25);
+	font-weight: var(--font-weight-normal);
+}
+
+h2 {
+	font-family: var(--font-family-secondary);
+	font-size: var(--size-20);
+	font-weight: var(--font-weight-bold);
+}
+
+h3 {
+	font-family: var(--font-family-secondary);
+	font-size: var(--size-5);
+	font-weight: var(--font-weight-semibold);
+}
+
+button {
+	font-family: var(--font-family-secondary);
+	font-size: var(--size-10);
+	font-weight: var(--font-weight-semibold);
+}
+
+p, li {
+	font-family: var(--font-family-secondary);
+	font-size: var(--size-5);
+}
