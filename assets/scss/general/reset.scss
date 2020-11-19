@@ -6,6 +6,7 @@
 
 html {
 	font-size: var(--font-size-base-mobile);
+	scroll-behavior: smooth;
 
 	@include min-mq($min-tablet) {
 		font-size: var(--font-size-base-desktop);
@@ -14,4 +15,10 @@ html {
 
 body {
 	font-size: 1rem;
+}
+
+button {
+	&:focus {
+    	outline: none;
+	}
 }

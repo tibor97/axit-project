@@ -25,4 +25,17 @@ button {
 p, li {
 	font-family: var(--font-family-secondary);
 	font-size: var(--size-5);
+	color: var(--color-secondary);
+}
+
+ul {
+	list-style-type: none;
+}
+
+section {
+	padding-top: var(--size-30);
+
+	@include min-mq($min-tablet) {
+		padding-top: var(--size-35);
+	}
 }

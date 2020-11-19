@@ -1,0 +1,13 @@
+.c-social-icons > a {
+	color: var(--color-secondary);
+	transition: color .4s;
+}
+
+.c-social-icons--footer > a {
+	font-size: var(--size-22);
+	margin: var(--size-4);
+
+	&:hover {
+		color: var(--white);
+	}
+}
