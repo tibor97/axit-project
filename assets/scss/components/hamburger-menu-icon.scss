@@ -32,7 +32,7 @@
 	}
 }
 
-.c-hamburger-menu--middle-line {
+.c-hamburger-menu__middle-line {
 	display: block;
 	width: var(--size-30);
 	height: 3px;
@@ -42,7 +42,7 @@
 }
 
 .c-hamburger-menu--toggle {
-	.c-hamburger-menu--middle-line {
+	.c-hamburger-menu__middle-line {
 		opacity: 0;
 	}
 

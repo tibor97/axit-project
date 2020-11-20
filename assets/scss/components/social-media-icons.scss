@@ -1,11 +1,23 @@
 .c-social-icons > a {
 	color: var(--color-secondary);
 	transition: color .4s;
+	margin: var(--size-4);	
 }
 
-.c-social-icons--footer > a {
+.c-social-icons--large > a {
+	font-size: var(--size-25);
+
+	&:hover {
+		color: var(--black);
+	}
+
+	@include min-mq($min-tablet) {
+		font-size: 48px;
+	}
+}
+
+.c-social-icons--small {
 	font-size: var(--size-22);
-	margin: var(--size-4);
 
 	&:hover {
 		color: var(--white);

@@ -1,0 +1,36 @@
+.c-section {
+	padding: var(--size-30) 0;
+
+	@include min-mq($min-tablet) {
+		padding: var(--size-35) 0;
+	}
+}
+
+.c-section--hero {	
+	background: url('../images/hero-section-background-image.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: var(--size-55);
+	padding: var(--size-35) 0;
+
+	display: flex;
+	align-items: center;
+
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--black);
+		opacity: 0.5;
+		z-index: 0;
+	}
+}
+
+.c-section--social-media, footer {
+	padding: var(--size-3) 0;
+}

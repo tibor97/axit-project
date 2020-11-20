@@ -1,0 +1,13 @@
+.c-button--cta {
+	padding: var(--size-3) var(--size-25);
+    background: var(--transparent);
+    border: 2px solid var(--white);
+}
+
+.c-button--full-width {
+	width: 100%;
+    background: var(--color-primary);
+    padding: var(--size-10) 0;
+    border: none;
+}
+	

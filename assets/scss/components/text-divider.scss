@@ -1,0 +1,3 @@
+.c-text-divider {
+	@include text-devider-bottom(var(--white), 0, 0);
+}

@@ -1,4 +1,5 @@
- .u-text--semi-bold {
+//text
+.u-text--semi-bold {
 	font-weight: var(--font-weight-semibold);
 }
 
@@ -10,23 +11,6 @@
 	font-style: italic;
 }
 
-.u-container {
-	max-width: var(--size-60);
-	padding: 0 var(--size-10);
-	margin: 0 auto;
-}
-
-.u-flex--space-between {
-	display: flex;
-	justify-content: space-between;
-}
-
-.u-flex--center {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
 .u-text--small {
 	font-size: var(--size-4);
 }
@@ -35,6 +19,81 @@
 	text-align: center;
 }
 
+.u-text--cta {
+	font-family: var(--font-family-primary);
+	font-weight: var(--font-weight-light);
+	font-size: var(--size-15);
+	color: var(--white);
+	padding: var(--size-25) 0;
+}
+//container
+.u-container {
+	max-width: var(--size-60);
+	padding: 0 var(--size-10);
+	margin: 0 auto;
+	z-index: 2;
+}
+//flex
+.u-flex {
+	display: flex;
+}
+.u-flex--wrap {
+	flex-wrap: wrap;
+}
+
+.u-flex--space-between {
+	justify-content: space-between;
+}
+
+.u-flex--space-evenly {
+	justify-content: space-evenly;
+}
+
+.u-flex--flex-end {
+	align-items: flex-end;
+}
+
+.u-flex--center {
+	align-items: center;
+}
+
 .u-flex--halves {
-	flex: 0 1 50%;
+	flex: 1 1 100%;
+
+	@include min-mq($min-tablet) {
+		flex: 0 1 50%;
+	}
+}
+
+.u-flex--third {
+	flex: 1 1 100%;
+
+	@include min-mq($min-tablet) {
+		flex: 0 1 33.3%;
+	}
+}
+
+.u-flex--two-thirds {
+	flex: 1 1 100%;
+
+	@include min-mq($min-tablet) {
+		flex: 0 1 66.6%;
+	}
+}
+//color
+.u-color--primary {
+	color: var(--color-primary)
+}
+
+.u-bg-color--light {
+	background-color: var(--color-secondary--light);
+}
+
+.u-color--white {
+	color: var(--white);
+}
+
+//padding
+.u-padd-0 {
+	padding: 0;
 }
