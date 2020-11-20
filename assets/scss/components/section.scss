@@ -31,6 +31,11 @@
 	padding: var(--size-3) 0;
 }
 
+.c-section--social-media {
+	box-shadow: 0px 1px 1.5px var(--color-secondary);
+	position: relative;
+}
+
 .c-section--tabs {
 	display: flex;
 	flex-direction: column;
