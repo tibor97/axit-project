@@ -1,0 +1,8 @@
+.c-text-wrapper {
+	width: 100%;
+
+	@include min-mq($min-tablet) {
+		max-width: var(--size-53);
+		margin: 0 var(--size-20);
+	}
+}

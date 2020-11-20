@@ -1,7 +1,17 @@
 .c-social-icons > a {
 	color: var(--color-secondary);
 	transition: color .4s;
-	margin: var(--size-4);	
+	padding: var(--size-4);	
+}
+
+.c-social-icons--large {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@include min-mq($min-tablet) {
+		justify-content: space-around;
+	}
 }
 
 .c-social-icons--large > a {
@@ -12,11 +22,15 @@
 	}
 
 	@include min-mq($min-tablet) {
-		font-size: 48px;
+		font-size: var(--size-25);
+	}
+
+	@include min-mq($min-desktop) {
+		font-size: var(--size-30);
 	}
 }
 
-.c-social-icons--small {
+.c-social-icons--small > a {
 	font-size: var(--size-22);
 
 	&:hover {

@@ -24,6 +24,13 @@ button {
 	font-size: var(--size-10);
 	font-weight: var(--font-weight-semibold);
 	color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: opacity .4s;
+
+    &:hover {
+    	opacity: 0.7;
+    }
 }
 
 p, li {
