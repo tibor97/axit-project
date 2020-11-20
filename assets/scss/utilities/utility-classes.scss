@@ -1,11 +1,40 @@
-.u-text--semi-bold {
+ .u-text--semi-bold {
 	font-weight: var(--font-weight-semibold);
-} //for header li
+}
 
 .u-text--uppercase {
 	text-transform: uppercase;
-} //for pricing section li/p - most popular
+} 
 
 .u-text--italic {
 	font-style: italic;
-} // for paragraf in testemonial section and h3 
+}
+
+.u-container {
+	max-width: var(--size-60);
+	padding: 0 var(--size-10);
+	margin: 0 auto;
+}
+
+.u-flex--space-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.u-flex--center {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.u-text--small {
+	font-size: var(--size-4);
+}
+
+.u-text--center {
+	text-align: center;
+}
+
+.u-flex--halves {
+	flex: 0 1 50%;
+}
