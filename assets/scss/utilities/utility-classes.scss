@@ -82,11 +82,19 @@
 }
 //color
 .u-color--primary {
-	color: var(--color-primary)
+	color: var(--color-primary);
+}
+
+.u-color--black {
+	color: var(--black);
 }
 
 .u-bg-color--light {
 	background-color: var(--color-secondary--light);
+}
+
+.u-bg-color--primary {
+	background-color: var(--color-primary);
 }
 
 .u-color--white {
@@ -96,4 +104,15 @@
 //padding
 .u-padd-0 {
 	padding: 0;
+}
+
+//margin
+.u-margin {
+	margin: var(--size-22) 0;
+}
+
+.u-margin-top--mobile {
+	@include max-mq ($min-tablet){
+		margin-top: var(--size-30);
+	}
 }

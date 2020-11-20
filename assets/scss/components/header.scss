@@ -22,14 +22,17 @@ nav {
 	transform: translateX(100%);
 	padding-top: var(--size-30);
 	z-index: -1;
+	transition: opacity .7s;
+	opacity: 0;
 
 	&.active {
 		transform: translateX(0%);
+		opacity: 1;
 	}
 
-	&.transition {
-		transition: transform .7s;
-	}
+	// &.transition {
+	// 	transition: transform .7s;
+	// }
 
 	@include min-mq($min-tablet) {
 		width: auto;
@@ -38,6 +41,7 @@ nav {
 		transform: translateX(0%);
 		padding-top: 0;
 		z-index: 1;
+		opacity: 1;
 	}
 }
 

@@ -6,16 +6,12 @@
 	}
 }
 
-.c-section--hero {	
+.c-section--hero {
 	background: url('../images/hero-section-background-image.jpg') no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	min-height: var(--size-55);
 	padding: var(--size-35) 0;
-
-	display: flex;
-	align-items: center;
-
 	position: relative;
 
 	&:before {
@@ -33,4 +29,14 @@
 
 .c-section--social-media, footer {
 	padding: var(--size-3) 0;
+}
+
+.c-section--tabs {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@include min-mq($min-tablet) {
+		flex-direction: row;
+	}
 }
