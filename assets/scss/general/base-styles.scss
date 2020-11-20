@@ -2,12 +2,15 @@ h1 {
 	font-family: var(--font-family-primary);
 	font-size: var(--size-25);
 	font-weight: var(--font-weight-normal);
+	padding: var(--size-22) 0 var(--size-25);
+	line-height: 1;
 }
 
 h2 {
 	font-family: var(--font-family-secondary);
 	font-size: var(--size-20);
 	font-weight: var(--font-weight-bold);
+	padding: var(--size-4) 0;
 }
 
 h3 {
@@ -20,6 +23,7 @@ button {
 	font-family: var(--font-family-secondary);
 	font-size: var(--size-10);
 	font-weight: var(--font-weight-semibold);
+	color: var(--white);
 }
 
 p, li {
@@ -30,12 +34,4 @@ p, li {
 
 ul {
 	list-style-type: none;
-}
-
-section {
-	padding-top: var(--size-30);
-
-	@include min-mq($min-tablet) {
-		padding-top: var(--size-35);
-	}
 }

@@ -1,0 +1,20 @@
+.c-form-wrapper {
+	background-color: var(--white);
+	text-align: center;
+	margin-top: var(--size-30);
+	width: 100%;
+
+	@include min-mq($min-tablet) {
+		max-width: var(--size-50);
+		margin-top: 0;
+	}
+}
+
+input {
+	width: 80%;
+	background-color: var(--transparent);
+  border-width: 0 0 1px;
+  border-color: var(--color-secondary);
+  margin: var(--size-21) 0;
+  padding: var(--size-2) var(--size-4);
+}

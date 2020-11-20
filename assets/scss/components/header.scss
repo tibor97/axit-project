@@ -27,7 +27,7 @@ nav {
 		transform: translateX(0%);
 	}
 
-	&.activated {
+	&.transition {
 		transition: transform .7s;
 	}
 
@@ -41,7 +41,7 @@ nav {
 	}
 }
 
-.c-navbar-list-item {
+.c-navbar-list__item {
 	display: block;
 	text-align: center;
 

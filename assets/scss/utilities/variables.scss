@@ -7,6 +7,7 @@
 --font-weight-bold: 700;
 --font-weight-semibold: 600;
 --font-weight-normal: 400;
+--font-weight-light: 300;
 
 //font sizes
 --font-size-base-desktop: 14px;
@@ -20,12 +21,15 @@
 --size-10: 1.0714rem;
 --size-15: 1.1428rem; 
 --size-20: 1.4285rem;
+--size-21: 1.7142rem;
 --size-22: 1.8rem;
 --size-25: 2.5714rem;
 --size-30: 3.5771rem;
 --size-35: 4.9285rem;
 --size-40: 5.7142rem;
---size-60: 80rem;
+--size-50: 26.0714rem;
+--size-55: 50.9285rem;
+--size-60: 81rem;
 
 //colors
 --black: #000;
@@ -35,6 +39,8 @@
 --color-secondary: #86878b; //grey
 --color-secondary--light: #f5f5f5; // for background
 --color-secondary--dark: #333333; // for background (cards, tabs)
+
+--transparent: transparent;
 }
 
 //breakpoints
