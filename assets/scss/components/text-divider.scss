@@ -1,7 +1,14 @@
-.c-text-divider {
+.c-text-divider-secondary {
 	@include text-devider-bottom(var(--white), 0, 0);
 }
+.c-text-divider-secondary--center {
+	@include text-devider-bottom(var(--white), 50%, -50%);
+}
 
-.c-text-divider-color--primary {
+.c-text-divider-primary {
 	@include text-devider-bottom(var(--color-primary), 0, 0);
+}
+
+.c-text-divider-primary--center {
+	@include text-devider-bottom(var(--color-primary), 50%, -50%);
 }

@@ -115,7 +115,7 @@
 	margin: 0;
 }
 
-.u-margin-top--mobile {
+.u-margin-top--mobile30 {
 	@include max-mq ($min-tablet){
 		margin-top: var(--size-30);
 	}

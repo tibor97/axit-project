@@ -1,0 +1,12 @@
+.c-grid {
+	display: grid;
+}
+
+.c-grid--thirds {
+	row-gap: var(--size-25);
+
+	@include min-mq($min-tablet) {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: var(--size-25);
+	}
+}
