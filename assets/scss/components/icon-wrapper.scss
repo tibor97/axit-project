@@ -1,0 +1,16 @@
+.c-icon-wrapper {
+	display: inline-block;
+	padding: var(--size-25);
+	border: 2px solid var(--color-primary);
+	border-radius: 50%;
+	position: relative;
+
+	i {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); 	
+		font-size: var(--size-24);
+		color: var(--color-primary);
+	}
+}
