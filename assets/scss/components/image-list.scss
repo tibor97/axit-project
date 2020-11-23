@@ -1,0 +1,26 @@
+.c-list-image__item {
+	position: relative;
+	margin: var(--size-20) 0;
+	padding-left: var(--size-30);
+
+	@include min-mq($min-tablet) {
+		padding-left: var(--size-35);
+	}
+
+	&:before {
+		content: url('../icons/cloud-download.svg');
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: var(--size-20);
+		height: var(--size-20);
+		padding: var(--size-3);
+		border: 2px solid var(--color-primary);
+		border-radius: 50%;
+
+		@include min-mq($min-tablet) {
+			width: var(--size-21);
+			height: var(--size-21);
+		}
+	}
+}

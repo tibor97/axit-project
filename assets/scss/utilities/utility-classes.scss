@@ -61,7 +61,7 @@
 	flex: 1 1 100%;
 
 	@include min-mq($min-tablet) {
-		flex: 0 1 50%;
+		flex: 0 1 47%;
 	}
 }
 
@@ -71,6 +71,10 @@
 	@include min-mq($min-tablet) {
 		flex: 0 1 33.3%;
 	}
+}
+
+.u-flex--row-reverse {
+	flex-direction: row-reverse;
 }
 
 .u-flex--two-thirds {
@@ -107,12 +111,16 @@
 }
 
 //margin
-.u-margin {
-	margin: var(--size-22) 0;
+.u-margin-0 {
+	margin: 0;
 }
 
 .u-margin-top--mobile {
 	@include max-mq ($min-tablet){
 		margin-top: var(--size-30);
 	}
+}
+
+.u-shadow--image {
+	box-shadow: 0 20px 30px lightgrey;
 }

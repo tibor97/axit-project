@@ -1,3 +1,7 @@
 .c-text-divider {
 	@include text-devider-bottom(var(--white), 0, 0);
 }
+
+.c-text-divider-color--primary {
+	@include text-devider-bottom(var(--color-primary), 0, 0);
+}
