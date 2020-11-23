@@ -36,12 +36,16 @@
 	position: relative;
 }
 
-.c-section--tabs {
+.c-section--tabs, .c-section--image-text {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 
 	@include min-mq($min-tablet) {
 		flex-direction: row;
+
+		&.c-section--reverse {
+			flex-direction: row-reverse;
+		}
 	}
 }
