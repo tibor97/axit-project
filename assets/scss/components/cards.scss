@@ -22,3 +22,13 @@
 		font-weight: var(--font-weight-bold);
 	}
 }
+
+.c-card__price {
+	font-family: var(--font-family-primary);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--size-43);
+
+	span {
+		font-size: var(--size-25);
+	}
+}
