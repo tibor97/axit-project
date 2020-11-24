@@ -17,6 +17,7 @@ h3 {
 	font-family: var(--font-family-secondary);
 	font-size: var(--size-5);
 	font-weight: var(--font-weight-semibold);
+	padding: var(--size-3) 0;
 }
 
 button {
@@ -45,4 +46,14 @@ p {
 
 ul {
 	list-style-type: none;
+}
+
+strong {
+	font-family: var(--font-family-primary);
+	font-weight: var(--font-weight-bold);
+	font-size: 94px;
+
+	span {
+		font-size: 35px;
+	}
 }

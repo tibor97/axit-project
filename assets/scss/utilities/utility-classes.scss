@@ -3,6 +3,10 @@
 	font-weight: var(--font-weight-semibold);
 }
 
+.u-text--bold {
+	font-weight: var(--font-weight-bold);
+}
+
 .u-text--uppercase {
 	text-transform: uppercase;
 } 
@@ -89,12 +93,20 @@
 	color: var(--color-primary);
 }
 
+.u-color--secondary {
+	color: var(--color-secondary);
+}
+
 .u-color--black {
 	color: var(--black);
 }
 
 .u-bg-color--light {
 	background-color: var(--color-secondary--light);
+}
+
+.u-bg-color--dark {
+	background-color: var(--color-secondary--dark);
 }
 
 .u-bg-color--primary {
@@ -123,4 +135,17 @@
 
 .u-shadow--image {
 	box-shadow: 0 20px 30px lightgrey;
+}
+
+//grid
+.u-grid-align-end {
+	align-items: end;
+}
+
+.u-border-bottom-primary {
+	border-bottom: 4px solid var(--color-primary);
+}
+
+.u-border-bottom-secondary {
+	border-bottom: 1px solid var(--color-secondary--light);
 }
