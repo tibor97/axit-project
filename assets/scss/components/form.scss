@@ -8,14 +8,29 @@
 	}
 }
 
-.c-form--hero {
-	input {
-		width: 80%;
-	}
+.c-input-wrapper {
+	width: 80%;
+	margin: 0 auto;
 }
 
-.c-form--contact {
-	input {
-		width: 100%;
-	}
+input, textarea {
+	width: 100%;
+	background-color: var(--transparent);
+ 	border-width: 0 0 1px;
+ 	border-color: var(--color-secondary);
+ 	margin: var(--size-20) 0;
+ 	padding: var(--size-2) var(--size-4);
+
+ 	@include min-mq($min-tablet) {
+ 		margin: var(--size-15) 0;
+ 	}
+}
+
+textarea {
+ 	resize: none;
+ 	height: var(--size-46);
+
+ 	@include min-mq($min-tablet) {
+ 		height: auto;
+ 	}
 }

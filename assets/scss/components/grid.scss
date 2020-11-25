@@ -15,6 +15,6 @@
 .c-grid--halves {
 	@include min-mq($min-tablet) {
 		grid-template-columns: repeat(2, 1fr);
-		column-gap: var(--size-25);
+		column-gap: var(--size-35);
 	}
 }
