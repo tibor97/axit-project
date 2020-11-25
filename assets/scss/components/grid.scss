@@ -1,5 +1,6 @@
 .c-grid {
 	display: grid;
+	padding: var(--size-25) 0;
 }
 
 .c-grid--thirds {
@@ -7,6 +8,13 @@
 
 	@include min-mq($min-tablet) {
 		grid-template-columns: repeat(3, 1fr);
+		column-gap: var(--size-25);
+	}
+}
+
+.c-grid--halves {
+	@include min-mq($min-tablet) {
+		grid-template-columns: repeat(2, 1fr);
 		column-gap: var(--size-25);
 	}
 }

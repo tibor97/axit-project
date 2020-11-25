@@ -8,11 +8,14 @@
 	}
 }
 
-input {
-	width: 80%;
-	background-color: var(--transparent);
-  border-width: 0 0 1px;
-  border-color: var(--color-secondary);
-  margin: var(--size-21) 0;
-  padding: var(--size-2) var(--size-4);
+.c-form--hero {
+	input {
+		width: 80%;
+	}
+}
+
+.c-form--contact {
+	input {
+		width: 100%;
+	}
 }
