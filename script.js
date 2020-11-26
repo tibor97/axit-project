@@ -21,3 +21,23 @@ navbarListItems.forEach(function(navItems) {
 		}
 	}
 });
+
+
+var modalWrapper = document.querySelector('.c-modal-wrapper');
+var modal = document.querySelector('.c-modal');
+var buttonModal = document.querySelector('#c-button--modal');
+var buttonClose = document.querySelector('.c-button--close');
+
+buttonModal.onclick = function() {
+	modalWrapper.classList.add('c-modal-active');
+}
+
+window.onclick = function() {
+	if (event.target == modalWrapper) {
+    	modalWrapper.classList.remove('c-modal-active');
+	}
+}
+
+buttonClose.onclick = function() {
+	modalWrapper.classList.remove('c-modal-active');
+}
