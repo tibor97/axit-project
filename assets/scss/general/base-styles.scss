@@ -1,9 +1,15 @@
 h1 {
 	font-family: var(--font-family-primary);
-	font-size: var(--size-25);
+	font-size: var(--size-24);
 	font-weight: var(--font-weight-normal);
-	padding: var(--size-22) 0 var(--size-25);
-	line-height: 1;
+	padding: var(--size-20) 0 var(--size-20);
+	line-height: 1.1;
+
+	@include min-mq($min-tablet) {
+		font-size: var(--size-25);
+		padding: var(--size-22) 0 var(--size-25);
+		line-height: 1;
+	}
 }
 
 h2 {
@@ -41,7 +47,11 @@ p, li {
 }
 
 p {
-	margin: var(--size-22) 0;
+	margin: var(--size-10) 0;
+
+	@include min-mq($min-tablet) {
+		margin: var(--size-22) 0;
+	}
 }
 
 ul {

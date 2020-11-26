@@ -1,6 +1,10 @@
 .c-grid {
 	display: grid;
-	padding: var(--size-25) 0;
+	padding: var(--size-10) 0;
+
+	@include min-mq($min-tablet) {
+		padding: var(--size-25) 0;
+	}
 }
 
 .c-grid--thirds {
@@ -8,6 +12,10 @@
 
 	@include min-mq($min-tablet) {
 		grid-template-columns: repeat(3, 1fr);
+		column-gap: var(--size-15);
+	}
+
+	@include min-mq($min-desktop) {
 		column-gap: var(--size-25);
 	}
 }
@@ -15,6 +23,10 @@
 .c-grid--halves {
 	@include min-mq($min-tablet) {
 		grid-template-columns: repeat(2, 1fr);
+		column-gap: var(--size-25);
+	}
+
+	@include min-mq($min-desktop) {
 		column-gap: var(--size-35);
 	}
 }

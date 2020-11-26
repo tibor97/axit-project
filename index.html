@@ -49,9 +49,18 @@
 					<form>
 						<h2 class="u-bg-color--light">Try Your <span class="u-color--primary">FREE</span> Trial Today</h2>
 						<div class="c-input-wrapper">
-							<input type="text" placeholder="Name">
-							<input type="mail" placeholder="Email">
-							<input type="password" placeholder="Password">
+							<div class="c-input-field">
+	    					<input type="text" id="name" required />
+	    					<label for="name">Name</label>
+  						</div>
+  						<div class="c-input-field">
+	    					<input type="text" id="email" required />
+	    					<label for="email">Email</label>
+  						</div>
+  						<div class="c-input-field">
+	    					<input type="password" id="password" required />
+	    					<label for="password">Password</label>
+  						</div>
 						</div>
 						<button class="c-button--full-width">Get Started</button>
 					</form>
@@ -107,11 +116,11 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
 					<ul class="c-list-image">
 						<li class="c-list-image__item">
-							<h3 class="u-color--black">Title</h3>
+							<h3 class="u-color--black u-padd-0">Title</h3>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
 						</li>
 						<li class="c-list-image__item">
-							<h3 class="u-color--black">Title</h3>
+							<h3 class="u-color--black u-padd-0">Title</h3>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
 						</li>
 					</ul>
@@ -286,11 +295,23 @@
 			<form class="c-form--contact">
 				<div class="c-grid c-grid--halves">
 					<div>
-						<input type="text" placeholder="Name">
-						<input type="mail" placeholder="Email">
-						<input type="text" placeholder="Subject">
+						<div class="c-input-field">
+    					<input type="text" id="contact-name" required />
+    					<label for="contact-name">Name</label>
+  					</div>
+  					<div class="c-input-field">
+    					<input type="text" id="contact-email" required />
+    					<label for="contact-email">Email</label>
+  					</div>
+  					<div class="c-input-field">
+    					<input type="text" id="contact-subject" required />
+    					<label for="contact-subject">Subject</label>
+  					</div>
 					</div>
-					<textarea placeholder="Message"></textarea>
+					<div class="c-input-field u-margin-top--mobile0">
+    				<textarea id="message"></textarea>
+    				<label for="message">Message</label>
+  				</div>
 				</div>
 				<button class="c-button u-bg-color--primary u-button-center">Send Message</button>
 			</form>
