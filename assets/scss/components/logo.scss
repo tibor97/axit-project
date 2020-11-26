@@ -1,3 +1,11 @@
+.c-logo {
+	width: var(--size-45);
+
+	@include min-mq($min-tablet) {
+		width: auto;
+	}
+}
+
 .c-logo--small {
 	width: var(--size-40);
 }
