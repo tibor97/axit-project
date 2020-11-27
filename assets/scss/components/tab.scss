@@ -8,7 +8,7 @@
 	}
 }
 
-.c-tabs__content-wrapper {
+.c-tabs__content {
 	display: none;
 	flex-wrap: wrap;
 	width: 100%;
@@ -19,8 +19,8 @@
 	}
 }
 
-.c-tabs__content-wrapper--active {
-	
+.c-tabs__content--active {
+	display: flex;
 }
 
 .c-tab {
