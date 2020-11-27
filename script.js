@@ -24,7 +24,6 @@ navbarListItems.forEach(function(navItems) {
 
 
 var modalWrapper = document.querySelector('.c-modal-wrapper');
-var modal = document.querySelector('.c-modal');
 var buttonModal = document.querySelector('#c-button--modal');
 var buttonClose = document.querySelector('.c-button--close');
 
@@ -40,4 +39,15 @@ window.onclick = function() {
 
 buttonClose.onclick = function() {
 	modalWrapper.classList.remove('c-modal-active');
+}
+
+var download = document.querySelector("#c-button-download");
+
+download.onclick = function() {
+	var link = document.createElement("a");
+    
+    link.setAttribute("download", 'index.html');
+    link.href = 'index.html';
+    document.body.appendChild(link);
+    link.click();
 }
