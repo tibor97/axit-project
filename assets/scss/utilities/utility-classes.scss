@@ -37,7 +37,14 @@
 //container
 .u-container {
 	max-width: var(--size-60);
+	width: 100%;
 	padding: 0 var(--size-10);
+	margin: 0 auto;
+}
+
+.u-container-center {
+	width: auto;
+	display: block;
 	margin: 0 auto;
 }
 //flex
@@ -135,6 +142,12 @@
 	}
 }
 
+.u-margin-top--mobile20 {
+	@include max-mq ($min-tablet){
+		margin-top: var(--size-20);
+	}
+}
+
 .u-margin-top--mobile0 {
 	@include max-mq ($min-tablet){
 		margin-top: 0 !important;
@@ -161,4 +174,10 @@
 .u-button-center {
 	display: block;
 	margin: 0 auto;
+}
+//display
+.u-display-none-mobile {
+	@include max-mq($min-tablet) {
+		display: none;
+	}
 }
