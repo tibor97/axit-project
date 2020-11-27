@@ -8,6 +8,21 @@
 	}
 }
 
+.c-tabs__content-wrapper {
+	display: none;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+
+	@include min-mq($min-tablet) {
+		flex-wrap: nowrap;
+	}
+}
+
+.c-tabs__content-wrapper--active {
+	
+}
+
 .c-tab {
 	width: 100%;
 	height: var(--size-30);

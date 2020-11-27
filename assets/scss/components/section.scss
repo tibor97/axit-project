@@ -54,6 +54,12 @@
 	}
 }
 
+.c-section--tabs {
+	@include min-mq($min-tablet) {
+		align-items: center;
+	}
+}
+
 .c-section-cta--download {
 	background: url('../images/download-section-background-image.jpg') no-repeat center;
 	background-size: cover;

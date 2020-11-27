@@ -51,3 +51,38 @@ download.onclick = function() {
     document.body.appendChild(link);
     link.click();
 }
+
+// var tab = document.querySelectorAll(".c-tab");
+
+// tab.forEach(function(tab) {
+// 	tab.onclick = function(e){
+// 		e.preventDefault();
+//   		const active = document.querySelector('.c-tab--active');
+
+//   		if(active){
+//     		active.classList.remove('c-tab--active');
+//   		}
+//   		e.currentTarget.classList.add('c-tab--active');
+// 	};
+// });
+
+
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("c-tabs__content-wrapper");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("c-tab");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" c-tab--active", "");
+  }
+
+  document.getElementById(tabName).style.display = "flex";
+  evt.currentTarget.className += "  c-tab--active";
+
+}
+
+document.getElementById("defaultOpen").click();

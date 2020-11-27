@@ -89,18 +89,45 @@
 		<div class="u-container">
 			<div class="c-section--tabs">
 				<div class="c-tabs-wrapper">
-					<button class="c-tab c-tab--active">TAB 1</button>
-					<button class="c-tab">TAB 2</button>
-					<button class="c-tab">TAB 3</button>
+					<button class="c-tab" onclick="openTab(event, 'tab1')" id="defaultOpen">TAB 1</button>
+					<button class="c-tab" onclick="openTab(event, 'tab2')">TAB 2</button>
+					<button class="c-tab" onclick="openTab(event, 'tab3')">TAB 3</button>
 				</div>
-				<div class="c-text-wrapper">
-					<h2>Tabs with soft transitioning effect.</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-					<button class="c-button u-bg-color--primary">Download</button>
+				<div id="tab1" class="c-tabs__content-wrapper">
+					<div class="c-text-wrapper">
+						<h2>Tabs with soft transitioning effect.</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+						<button class="c-button u-bg-color--primary">Download</button>
+					</div>
+					<div class="c-image-wrapper u-flex u-flex--center u-margin-top--mobile30">
+						<img src="assets/images/tab-section-image.png" alt="grayscale image of buildings">
+					</div>
 				</div>
-				<div class="c-image-wrapper u-flex u-flex--center u-margin-top--mobile30">
-					<img src="assets/images/tab-section-image.png" alt="grayscale image of buildings">
+				<div id="tab2" class="c-tabs__content-wrapper">
+					<div class="c-text-wrapper">
+						<h2>Tabs 2 with soft transitioning effect.</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+						<button class="c-button u-bg-color--primary">Download</button>
+					</div>
+					<div class="c-image-wrapper u-flex u-flex--center u-margin-top--mobile30">
+						<img src="assets/images/tab-section-image.png" alt="grayscale image of buildings">
+					</div>
+				</div>
+				<div  id="tab3" class="c-tabs__content-wrapper">
+					<div class="c-text-wrapper">
+						<h2>Tabs 3 with soft transitioning effect.</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+						<button class="c-button u-bg-color--primary">Download</button>
+					</div>
+					<div class="c-image-wrapper u-flex u-flex--center u-margin-top--mobile30">
+						<img src="assets/images/tab-section-image.png" alt="grayscale image of buildings">
+					</div>
 				</div>
 			</div>
 		</div>
